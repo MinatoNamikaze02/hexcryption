@@ -9,10 +9,12 @@ An encryption and decryption algorithm using hex values which produces unique en
   * Run `go run main.go --help` for more specific information.
 
 ## Example 
-  * Running the test file
+  Running the test file
+  
   
   ![implementation1](https://github.com/MinatoNamikaze02/hexcryption/blob/master/imp/imp1.png)
   
-  * Testing on a random string
+  Testing on a random string
+  
   
   ![implementation2](https://github.com/MinatoNamikaze02/hexcryption/blob/master/imp/imp2.png)
