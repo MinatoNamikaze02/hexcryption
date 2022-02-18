@@ -12,7 +12,7 @@ func Encoder(inp string) (string, string){
 	var key string
 	rand.Seed(time.Now().UnixNano())
 	temp := []byte(inp)
-	fmt.Println(temp)
+	// fmt.Println(temp)
 	for i:=0; i < len(temp); i++{
 		innerkey := ""
 		n := rand.Intn(10-1) + 1
