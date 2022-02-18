@@ -51,9 +51,9 @@ func main(){
 		var msgFlag string
 		if len(os.Args) > 2{
 			inp := os.Args[2]
-			fmt.Println("Input String:",inp)
+			fmt.Println("\nInput String:",inp)
 			enc, key := se.Encoder(string(inp))
-			msgFlag = fmt.Sprint("Encrypted: ", enc, "\n", "Key: ", key)
+			msgFlag = fmt.Sprint("\nEncrypted: ", enc, "\n\n", "Key: ", key)
 		}
 		fmt.Println(msgFlag)
 	case "-d":
@@ -63,11 +63,11 @@ func main(){
 			if strings.Compare(os.Args[3], "-d") == 1 && len(os.Args) > 4{
 				key := os.Args[4]
 				dec := se.Decoder(inp, key)
-				msgFlag = fmt.Sprint("Decrypted: ", dec)
+				msgFlag = fmt.Sprint("\nDecrypted: ", dec)
 				fmt.Println(msgFlag)
 			}else{
-				fmt.Println("No key provided! Cannot decode without the key\n")
-				fmt.Println("try running with --help flag to know more about the command usage!\n")
+				fmt.Println("No key provided! Cannot decode without the key")
+				fmt.Println("try running with --help flag to know more about the command usage!")
 				os.Exit(2)
 			}
 		}
