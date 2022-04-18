@@ -6,7 +6,9 @@ An encryption and decryption algorithm using hex values which produces unique en
 ## Usages 
   * Run the main.go in the root directory either manually or using `make run`.
   * Run the test file by running `make test`.
-  * Run `go run main.go --help` for more specific information.
+  * You can run `go build` and subsequently run `./hexcryption.exe [options] [values]`.
+  * Use the `--help` flag if you're confused ;).
+  * You could also just run `go run main.go`.
 
 ## Example 
   Running the test file
